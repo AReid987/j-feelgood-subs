@@ -1,3 +1,9 @@
 {
-	"packageManager": "pnpm@10.14.0+sha1.85759954ad817d248e2fed7f789f046a24f0327d"
+	"packageManager": "pnpm@10.14.0+sha1.85759954ad817d248e2fed7f789f046a24f0327d",
+	"scripts": {
+		"check-types": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"turbo": "^2.5.5"
+	}
 }

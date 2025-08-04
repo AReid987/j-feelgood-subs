@@ -16,6 +16,5 @@
       "persistent": true,
       "cache": false
     }
-  },
-  "baseBranch": "origin/main"
+  }
 }

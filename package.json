@@ -1,7 +1,7 @@
 {
 	"packageManager": "pnpm@10.14.0",
 	"scripts": {
-		"check-types": "tsc --noEmit"
+		"check-types": "tsc --noEmit",
 		"build": "turbo run build"
 	},
 	"workspaces": ["apps/*", "packages/*"],

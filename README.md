@@ -1,3 +1,67 @@
+# J Feelgood Subscriptions
+
+![Alt](https://repobeats.axiom.co/api/embed/c778984a3d8850076e7ec378e1e651dd82deaa75.svg "Repobeats analytics image")
+
+## Project Overview
+
+This project is the Minimum Viable Product (MVP) for J Feelgood Subscriptions, a monthly art print trading card subscription service. The MVP includes a landing page, user authentication, subscription management, and recurring payment processing via Stripe.
+
+The project is structured as a monorepo containing a Next.js frontend, a FastAPI backend, and a `docs` directory for project documentation.
+
+## Features
+
+*   **Landing Page:** Informative page introducing the service.
+*   **User Authentication:** Secure registration and login for users.
+*   **Subscription Management Dashboard:** Allows subscribers to view their details and manage their subscription.
+*   **Subscription (Stripe Integration):** Secure payment information submission and handling of recurring payments via Stripe.
+*   **Exclusive Bonus Content:** Access to subscriber-only content.
+*   **High-Resolution Digital Art Prints:** Downloadable digital copies of monthly art prints for subscribers.
+*   **Learn More / FAQ Page:** Provides detailed information and answers to frequently asked questions.
+
+## Getting Started
+
+### Prerequisites
+
+*   Node.js and npm/yarn/pnpm (for the frontend)
+*   Python 3.11+ and PDM (for the backend)
+*   PostgreSQL database
+*   Stripe account (for testing payments and webhooks)
+*   Cloud object storage (e.g., AWS S3) for digital prints (for production)
+
+### Installation
+
+Detailed setup instructions for both the frontend and backend can be found in the documentation.
+
+1.  Clone the repository: `git clone [repository URL]`
+2.  Navigate to the project directory: `cd jfeelgood-subscriptions`
+3.  Refer to the documentation in the `docs/` folder for specific setup steps for the frontend and backend, including dependencies, environment variables, and database configuration.
+
+### Running the Project
+
+Detailed instructions for running both the frontend and backend are available in the documentation. Typically, you will run the frontend and backend development servers in separate terminals.
+
+## Project Structure
+
+This project follows a monorepo structure with the following main directories:
+
+*   `frontend/`: Contains the Next.js application.
+*   `backend/`: Contains the FastAPI application.
+*   `docs/`: Contains all project documentation.
+
+## Technologies Used
+
+*   **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Zustand, Axios
+*   **Backend:** FastAPI, Python, SQLModel, PostgreSQL, PDM, Uvicorn, Bcrypt, Python-Jose, Passlib, Stripe Python SDK
+*   **Database:** PostgreSQL
+*   **Payment Processing:** Stripe
+
+## Contributing
+
+Contribution guidelines will be added here.
+
+## License
+
+License information will be added here.
 # JFeelgood Subscriptions
 
 ## Project Overview

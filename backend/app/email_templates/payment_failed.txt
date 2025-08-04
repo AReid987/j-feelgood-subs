@@ -1,0 +1,15 @@
+Subject: Payment Failed for Your J Feelgood Subscriptions
+
+Dear {{user_name_or_email}},
+
+We regret to inform you that your recent payment for J Feelgood Subscriptions failed.
+
+To ensure uninterrupted access to your subscription benefits, please update your payment information at your earliest convenience.
+
+You can update your payment details here: {{update_payment_link}}
+
+If you have any questions, please contact our support team.
+
+Thank you,
+
+The J Feelgood Subscriptions Team

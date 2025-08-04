@@ -6,9 +6,9 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.corepack
-    pkgs.pdm
-    pkgs.gh
+    # pkgs.corepack
+    # pkgs.pdm
+    # pkgs.gh
     # pkgs.go
     # pkgs.python311
     # pkgs.python311Packages.pip

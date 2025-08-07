@@ -1,6 +1,6 @@
 import apiClient from './apiClient';
 
-export const cancelSubscription = async (): Promise<any> => { // Replace any with a more specific type for cancellation response
+export const cancelSubscription = async (): Promise<unknown> => { // Replace any with a more specific type for cancellation response
   try {
     const response = await apiClient.post('/api/v1/subscriptions/cancel');
     return response.data;

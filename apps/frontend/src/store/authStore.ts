@@ -11,14 +11,3 @@ const useAuthStore = create<AuthState>((set) => ({
 }));
 
 export default useAuthStore;
-
-
-}));
-
-export default useAuthStore;
-import create from 'zustand';
-
-interface AuthState {
-  token: string | null;
-  setToken: (token: string | null) => void;
-}

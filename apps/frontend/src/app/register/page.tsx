@@ -1,8 +1,6 @@
 "use client";
-typescriptreact
 import React, { useState } from 'react';
 import styles from './register.module.css';
-import { useRouter } from 'next/navigation';
 
 const RegisterPage: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -11,8 +9,6 @@ const RegisterPage: React.FC = () => {
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
-
-  const router = useRouter();
 
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);

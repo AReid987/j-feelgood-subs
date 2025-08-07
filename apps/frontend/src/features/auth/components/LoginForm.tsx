@@ -1,4 +1,3 @@
-typescriptreact
 import React, { useState } from 'react';
 import styles from '/home/user/jfeelgood/frontend/src/features/auth/components/loginForm.module.css';
 import { useRouter } from 'next/navigation';

@@ -24,26 +24,31 @@ const RegisterPage: React.FC = () => {
     }
 
     // Send registration data to backend
- fetch('http://localhost:8000/register', {
+    fetch('http://localhost:8000/register', {
       method: 'POST',
       headers: {
- 'Content-Type': 'application/json',
+        'Content-Type': 'application/json',
       },
- body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, password }),
     })
-      .then(response => response.json())
-      .then(data => {
-        if (response.ok) {
-          // TODO: Handle successful registration (e.g., redirect to login)
-        } else {
-          // Assuming the backend sends error details in the 'detail' field
-          alert(`Registration failed: ${data.detail || 'Unknown error'}`);
+      .then(response => {
+        if (!response.ok) {
+          // If the response is not ok, parse the JSON to get the error detail
+          return response.json().then(err => {
+            throw new Error(err.detail || 'Unknown error');
+          });
         }
+        return response.json();
+      })
+      .then(data => {
+        // If we get here, the registration was successful
+        // TODO: Handle successful registration (e.g., redirect to login)
+        console.log('Registration successful:', data);
+        alert('Registration successful!');
       })
       .catch(error => {
         console.error('Registration failed:', error);
-        // TODO: Handle registration errors (e.g., display error message)
-        alert('An error occurred during registration. Please try again.');
+        alert(`Registration failed: ${error.message}`);
       });
   };
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './loginForm.module.css';
 import { useRouter } from 'next/navigation';
-import { useAuthStore } from '../../../store/authStore';
+import useAuthStore from '../../../store/authStore';
 
 const LoginForm: React.FC = () => {
   const [email, setEmail] = useState('');

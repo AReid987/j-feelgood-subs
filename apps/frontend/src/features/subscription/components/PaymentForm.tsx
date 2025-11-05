@@ -29,6 +29,7 @@ const PaymentForm: React.FC = () => {
         // TODO: Send paymentMethod.id to your backend
       }
     });
+    }
   };
 
   return (

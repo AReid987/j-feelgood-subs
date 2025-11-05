@@ -1,11 +1,11 @@
-import axios from 'axios';
+import axios, { InternalAxiosRequestConfig, AxiosError } from 'axios';
 
 const apiClient = axios.create({
   baseURL: 'http://localhost:8000/api/v1', // Adjust baseURL as needed
 });
 
 apiClient.interceptors.request.use(
-  (config) => {
+  (config: InternalAxiosRequestConfig) => {
     // Placeholder: Retrieve the JWT token securely from your state management (e.g., Zustand)
     const token = 'YOUR_SECURELY_STORED_JWT_TOKEN'; // Replace with actual token retrieval logic
 
@@ -15,7 +15,7 @@ apiClient.interceptors.request.use(
 
     return config;
   },
-  (error) => {
+  (error: AxiosError) => {
     return Promise.reject(error);
   }
 );

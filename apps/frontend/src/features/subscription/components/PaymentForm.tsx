@@ -16,10 +16,11 @@ const PaymentForm: React.FC = () => {
 
     const cardElement = elements.getElement(CardElement);
 
-    stripe.createPaymentMethod({
-      type: 'card',
-      card: cardElement,
-    }).then(({ paymentMethod, error }) => {
+    if (cardElement) {
+      stripe.createPaymentMethod({
+        type: 'card',
+        card: cardElement,
+      }).then(({ paymentMethod, error }) => {
       if (error) {
         console.error('[Stripe error]', error);
         // TODO: Display error message to the user

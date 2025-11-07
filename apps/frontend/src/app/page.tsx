@@ -1,22 +1,20 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       {/* Header Section - Placeholder */}
- <header className="w-full py-4">
- {/* Integrate header content from Lovable.ai page */}
- <nav className="container mx-auto px-4">
- {/* Placeholder for navigation elements */}
- </nav>
- </header>
+      <header className="w-full py-4">
+        {/* Integrate header content from Lovable.ai page */}
+        <nav className="container mx-auto px-4">
+          {/* Placeholder for navigation elements */}
+        </nav>
+      </header>
 
       {/* Main Content Section - Placeholder */}
       <main className="flex flex-col items-center justify-center w-full row-start-2">
- {/* Integrate hero/feature section content from Lovable.ai page */}
- <section className="container mx-auto px-4 py-12">
- {/* Placeholder for main content */}
- </section>
+        {/* Integrate hero/feature section content from Lovable.ai page */}
+        <section className="container mx-auto px-4 py-12">
+          {/* Placeholder for main content */}
+        </section>
       </main>
 
       {/* Footer Section - Placeholder */}
@@ -27,7 +25,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
             src="/file.svg"
             alt="File icon"
@@ -42,7 +40,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
             src="/window.svg"
             alt="Window icon"
@@ -57,7 +55,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
             src="/globe.svg"
             alt="Globe icon"
